@@ -83,7 +83,7 @@
             <li class="feature-item">
               <div class="feature-btn">
                 <svg class="btn-icon" width="70", height="70">
-                  <use href="./images/icons.svg#icon-antenna-1-1"></use>
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
               <h2 class="features">УВАГА ДО ДЕТАЛЕЙ</h2>
@@ -95,7 +95,7 @@
             <li class="feature-item">
               <div class="feature-btn">
                 <svg class="btn-icon" width="70", height="70">
-                  <use href="./images/icons.svg#icon-clock"></use>
+                  <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
               <h2 class="features">ПУНКТУАЛЬНІСТЬ</h2>
@@ -107,7 +107,7 @@
             <li class="feature-item">
               <div class="feature-btn">
                 <svg class="btn-icon" width="70", height="70">
-                  <use href="./images/icons.svg#icon-diagram"></use>
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
               <h2 class="features">ПЛАНУВАННЯ</h2>
@@ -118,7 +118,7 @@
             <li class="feature-item">
             <div class="feature-btn"> 
                 <svg class="btn-icon" width="70", height="70">
-                  <use href="./images/icons.svg#icon-astronaut-1-1"></use>
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div> 
               <h2 class="features">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
@@ -379,7 +379,7 @@
           <li class="client-item">
             <a class="client-link" href="">
               <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-ya">                  
+                <use href="./images/icons.svg#icon-Logo">                  
                 </use>
               </svg>
             </a>
@@ -387,7 +387,7 @@
           <li class="client-item">
              <a class="client-link" href="">
               <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-logotag">                  
+                <use href="./images/icons.svg#icon-Logo1">                  
                 </use>
               </svg>
             </a>
@@ -395,7 +395,7 @@
           <li class="client-item">
              <a class="client-link" href="">
               <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-company">                  
+                <use href="./images/icons.svg#icon-Logo2">                  
                 </use>
               </svg>
             </a>
@@ -403,7 +403,7 @@
           <li class="client-item">
              <a class="client-link" href="">
               <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-foster">                  
+                <use href="./images/icons.svg#icon-Logo3">                  
                 </use>
               </svg>
             </a>
@@ -411,7 +411,7 @@
           <li class="client-item">
              <a class="client-link" href="">
               <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-brand">                  
+                <use href="./images/icons.svg#icon-Logo4">                  
                 </use>
               </svg>
             </a>
@@ -419,7 +419,7 @@
           <li class="client-item">
              <a class="client-link" href="">
               <svg class="client-icon" width="106" height="60">
-                <use href="./images/icons.svg#icon-tagline">                  
+                <use href="./images/icons.svg#icon-Logo5">                  
                 </use>
               </svg>
             </a>
@@ -492,15 +492,16 @@
     </div>
     </div> 
 
-    <div class="subscribe-box">
+    <div class="flex-subscribe-box">
     <form name="subscribe-form">
-      <label><span class="inner-text"></span>  
-      <input type="text" placeholder="E-mail"></label>
-      
       <strong class="mailing">Підпишіться на розсилку</strong>
-      <button class="footer-btn" type="submit">Підписатися
+      <label><span class="inner-text"></span>  
+      <input class="subscribe-field" type="text" placeholder="E-mail"></label>
+      
+      
+      <button class="footer-btn" type="submit"><span class="btn-text">Підписатися</span>
         <svg class="icon-subscribe" width="24", height="24">
-          <use href="./images/icons.svg#"></use></svg>
+          <use href="./images/icons.svg#icon-icon-send"></use></svg>
           </button>        
 
         
@@ -524,19 +525,31 @@
           <strong class="r-form-title">Залиште свої дані, ми вам передзвонимо</strong>
         <div class="r-form-group" >
       
-<label class="">Ім'я<input type="name" name="user-name">
-<svg width="12", height="12"><use href=""></use></svg>
+<label class="label-text">Ім'я
+  <div class="f-group">
+  <input class="form-field" type="name" name="user-name">
+<svg class="f-icon" width="12" height="12"><use href="./images/icons.svg#icon-person-black-18dp"></use>
+</svg>
+</div>
 </label>
 
-<label class="">Телефон<input type="tel" name="user-phone">
-<svg width="13", height="13"><use href=""></use></svg>
+<label class="label-text">Телефон
+  <div class="f-group">
+  <input class="form-field" type="tel" name="user-phone">
+<svg class="f-icon" width="13" height="13"><use href="./images/icons.svg#icon-phone-black-18dp"></use>
+</svg>
+</div>
 </label>
 
-<label class="">Пошта<input type="mail" name="user-mail">
-<svg width="15", height="12"><use href=""></use></svg>
+<label class="label-text">Пошта
+  <div class="f-group">
+  <input class="form-field" type="mail" name="user-mail">
+<svg class="f-icon" width="15" height="12"><use href="./images/icons.svg#icon-email-black-18dp"></use>
+</svg>
+</div>
 </label>
 
-<label class="text-comment">Коментар<textarea name="comment" placeholder="Введіть текст" type="text"></textarea></label>
+<label class="c-text" >Коментар<textarea class="comment" name="comment" placeholder="Введіть текст" type="text"></textarea></label>
 <label><input type="checkbox" name="" id="">
   <span>Погоджуюся з розсилкою та приймаю</span>
   <a class="form-link" href="">Умови договору</a>
