@@ -492,14 +492,14 @@
     </div>
     </div> 
 
-    <div class="flex-subscribe-box">
+    <div class="flex-container-subscribe">
     <form name="subscribe-form">
       <strong class="mailing">Підпишіться на розсилку</strong>
-      <label><span class="inner-text"></span>  
+      <label>  
       <input class="subscribe-field" type="text" placeholder="E-mail"></label>
       
       
-      <button class="footer-btn" type="submit"><span class="btn-text">Підписатися</span>
+      <button class="footer-btn" type="submit">Підписатися
         <svg class="icon-subscribe" width="24", height="24">
           <use href="./images/icons.svg#icon-icon-send"></use></svg>
           </button>        
@@ -549,11 +549,17 @@
 </div>
 </label>
 
-<label class="t-label">Коментар<textarea class="comment" name="comment" placeholder="Введіть текст" type="text"></textarea></label>
-<label><input class="visually-hidden" type="checkbox" name="checkbox" id="">
+<label class="t-label">Коментар
+  <textarea class="comment" name="comment" placeholder="Введіть текст" type="text"></textarea>
+</label>
+
+<!-- Checkbox -->
+
+<input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox">
+<label for="checkbox"></label>
   <span class="c-frame">
   <svg class="" width="11" height="8">
-     <use href="./images/icons.svg#"></use>     
+     <use href="./images/icons.svg#icon-check-done"></use>     
   </svg>
   </span>
   <span class="check-text">Погоджуюся з розсилкою та приймаю</span>
