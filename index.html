@@ -495,7 +495,7 @@
     <div class="flex-container-subscribe">
     <form name="subscribe-form">
       <strong class="mailing">Підпишіться на розсилку</strong>
-      <label>  
+      <label class="s-label">  
       <input class="subscribe-field" type="text" placeholder="E-mail"></label>
       
       
@@ -536,7 +536,7 @@
 <label class="label">Телефон
   <div class="f-group">
   <input class="field" type="tel" name="user-phone">
-<svg class="f-icon" width="13" height="13"><use href="./images/icons.svg#icon-phone-black-18dp"></use>
+<svg class="f-icon" ><use href="./images/icons.svg#icon-phone-black-18dp"></use>
 </svg>
 </div>
 </label>
@@ -544,7 +544,7 @@
 <label class="label">Пошта
   <div class="f-group">
   <input class="field" type="mail" name="user-mail">
-<svg class="f-icon" width="15" height="12"><use href="./images/icons.svg#icon-email-black-18dp"></use>
+ <svg class="f-icon" width="" height=""><use href="./images/icons.svg#icon-email-black-18dp"></use> 
 </svg>
 </div>
 </label>
@@ -555,12 +555,10 @@
 
 <!-- Checkbox -->
 
-<input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox">
-<label for="checkbox"></label>
-  <span class="c-frame">
-  <svg class="" width="11" height="8">
-     <use href="./images/icons.svg#icon-check-done"></use>     
-  </svg>
+<input class="check-input" type="checkbox" name="checkbox" id="checkbox">
+<label class="check-label">
+  <input class="check-input" type="checkbox" checked>
+  <span class="check-box">
   </span>
   <span class="check-text">Погоджуюся з розсилкою та приймаю</span>
   <a class="form-link" href="">Умови договору</a>
