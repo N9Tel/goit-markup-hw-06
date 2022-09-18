@@ -492,9 +492,12 @@
     </div>
     </div> 
 
-    <div class="flex-container-subscribe">
+    <!-- Форма підписки -->
+
+    
     <form name="subscribe-form">
       <strong class="mailing">Підпишіться на розсилку</strong>
+      <div class="flex-container-subscribe"></div>
       <label class="s-label">  
       <input class="subscribe-field" type="text" placeholder="E-mail"></label>
       
@@ -504,9 +507,9 @@
           <use href="./images/icons.svg#icon-icon-send"></use></svg>
           </button>        
 
-        
+        </div>
       </form>
-    </div>
+    
     </footer>
 
             <!-- Модальне вікно -->
@@ -525,29 +528,29 @@
           <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
         <div class="form-group" >
       
-<label class="label">Ім'я
+<label for="user-name" class="label">Ім'я</label>
   <div class="f-group">
-  <input class="field" type="name" name="user-name">
+  <input class="field" type="name" name="user-name" id="user-name">
 <svg class="f-icon" width="12" height="12"><use href="./images/icons.svg#icon-person-black-18dp"></use>
 </svg>
 </div>
-</label>
 
-<label class="label">Телефон
+
+<label for="user-phone" class="label">Телефон</label>
   <div class="f-group">
-  <input class="field" type="tel" name="user-phone">
+  <input class="field" type="tel" name="user-phone" id="user-phone">
 <svg class="f-icon" ><use href="./images/icons.svg#icon-phone-black-18dp"></use>
 </svg>
 </div>
-</label>
 
-<label class="label">Пошта
+
+<label for="user-mail" class="label">Пошта</label>
   <div class="f-group">
-  <input class="field" type="mail" name="user-mail">
+  <input class="field" type="mail" name="user-mail" id="user-mail">
  <svg class="f-icon" width="" height=""><use href="./images/icons.svg#icon-email-black-18dp"></use> 
 </svg>
 </div>
-</label>
+
 
 <label class="t-label">Коментар
   <textarea class="comment" name="comment" placeholder="Введіть текст" type="text"></textarea>
