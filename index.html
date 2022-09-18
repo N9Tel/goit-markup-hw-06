@@ -490,25 +490,23 @@
         </li>
       </ul>
     </div>
+    <div class="flex-container-subscribe">
+    <form name="subscribe-form">
+      <strong class="mailing">Підпишіться на розсилку</strong>
+      
+      <label class="s-label">  
+      <input class="subscribe-field" type="text" placeholder="E-mail"></label>
+            
+      <button class="footer-btn" type="submit">Підписатися
+        <svg class="icon-subscribe" width="24", height="24">
+          <use href="./images/icons.svg#icon-icon-send"></use></svg>
+          </button>                
+      </form>
+    </div>
     </div> 
 
     <!-- Форма підписки -->
 
-    
-    <form name="subscribe-form">
-      <strong class="mailing">Підпишіться на розсилку</strong>
-      <div class="flex-container-subscribe"></div>
-      <label class="s-label">  
-      <input class="subscribe-field" type="text" placeholder="E-mail"></label>
-      
-      
-      <button class="footer-btn" type="submit">Підписатися
-        <svg class="icon-subscribe" width="24", height="24">
-          <use href="./images/icons.svg#icon-icon-send"></use></svg>
-          </button>        
-
-        </div>
-      </form>
     
     </footer>
 
@@ -552,21 +550,21 @@
 </div>
 
 
-<label class="t-label">Коментар
-  <textarea class="comment" name="comment" placeholder="Введіть текст" type="text"></textarea>
-</label>
+<label for="comment" class="t-label">Коментар</label>
+  <textarea id="comment" class="comment" name="comment" placeholder="Введіть текст" type="text"></textarea>
+
 
 <!-- Checkbox -->
 
 <input class="check-input" type="checkbox" name="checkbox">
-<label class="check-label"></label>
-<input class="check-input" type="checkbox" name="checkbox">
 
+<input class="check-input" type="checkbox" id="check">
+<label for="check" class="check-label"></label>
   <span class="check-box"></span>
-  Погоджуюся з розсилкою та приймаю
-    <a class="form-link" href=""Умови договору></a> 
+  <span class="check-text">Погоджуюся з розсилкою та приймаю<a class="form-link" href="">Умови договору</a></span>
+    
   
-</label>
+
   
   
 <button class="btn-form" type="submit">Відправити</button>

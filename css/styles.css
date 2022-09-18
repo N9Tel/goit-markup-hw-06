@@ -710,9 +710,9 @@ address {
 
 
 .flex-container-subscribe {
-     display: flex;
-margin-left: 200px;
-    /* margin-left: 93px; */
+      display: inline-flex; 
+
+    margin-left: 93px; 
 }
 
 
@@ -833,8 +833,8 @@ margin-left: 200px;
      width: 30px;
     height: 30px;
     border-radius: 50%; 
-    top: 8px;
-    right: 8px;
+    top: 9px;
+    right: 9px;
     cursor: pointer;
     fill: var(--header-color);
      background-color: var(--main-bg-color); 
@@ -953,7 +953,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     height: 120px;
     resize: none;
     padding: 12px 16px;
-    
+    margin-bottom: -12px;
     border: 1px solid;
     border-radius: 4px;
     border-color: rgba(33, 33, 33, 0.2);
@@ -962,10 +962,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+.comment::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    letter-spacing: 0.01em;
+    color: grba(117, 117, 117, 0.5);
+}
+
 .comment:hover,
 .comment:focus {
     border-color: var(--accent-color);
 }
+
+
+
+/* Checkbox */
 
  .check-input {
     position: absolute;
@@ -982,7 +994,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .check-label {
     
-     margin-left: 10px; 
+     /* margin-left: 10px;  */
 }
 
 
@@ -990,7 +1002,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 
 .check-box {
-    
+   display: inline-block;
+   background: origin;
     width: 16px;
     height: 15px;
     border: 1px solid rgba(33, 33, 33, 1);
@@ -1001,15 +1014,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.c-frame:hover,
-.c-frame:focus {
+ .check-box:hover,
+.check-box:focus {
     border-color: var(--accent-color);
+} 
+
+.check-box:checked ~ .check-box-icon {
+    background-color: var(--accent-color);
 }
 
+
+
 .check-text {
+    display: inline-flex;
     margin: o;
-    margin-top: 20px; 
-    margin-bottom: 30px; 
+   margin-left: 50px;
+   margin-bottom: 30px;
 }
 
 
@@ -1017,13 +1037,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .form-link {
     display: block;
-    
+    margin-left: 4px;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-    
-    margin-bottom: 30px;
+
     color: rgba(117, 117, 117, 1);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -1050,7 +1069,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.btn-form:hover {
+.btn-form:hover,
+.btn-form:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);;
