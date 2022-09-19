@@ -710,16 +710,19 @@ address {
 
 
 .flex-container-subscribe {
-      display: inline-flex; 
+      
 
-    margin-left: 93px; 
+    margin-left: auto; 
 }
 
-
+.subscribe-form {
+    display: flex;
+}
 
 .mailing {
-
+ display: block;
     margin: 0;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
@@ -731,10 +734,13 @@ address {
     
 
 .subscribe-field {
-    position: relative;
+    
     display: block;
     width: 358px;
     height: 50px;
+    padding: 15px;
+    padding-left: 16px;
+margin-top: 20px;
     font-weight: 400;
         font-size: 16px;
         line-height: calc(20/16);
@@ -743,10 +749,12 @@ address {
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
 } 
 
 .subscribe-field::placeholder  {
-    position: absolute;
+    
     top: 15px;
     left:16px;
 
@@ -757,11 +765,18 @@ address {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.subscribe-field:hover,
+.subscribe-field:focus {
+    border-color: white;
+}
+
 .footer-btn {
-    position: relative;
+    
    display: block;
     margin: 0;
-    margin-left: 12px;
+    margin-top: 20px;
+    margin-left: 12px; 
+    padding: 0;
     cursor: pointer;
     width: 200px;
     height: 50px;
@@ -769,16 +784,22 @@ address {
     color: var(--txt-color);
     border: none;
     border-radius: 4px;
-   
+text-align: center;
+justify-content: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+ 
+}
 
+.footer-btn:hover,
+.footer-btn:focus {
+    border-color: white;
 }
 
 
 
 .icon-subscribe {
-    position: absolute;
-    top: 13px;
-    right: 28px;
+    
+    padding: 0;   
     
     fill: var(--txt-color)
     
@@ -833,8 +854,8 @@ address {
      width: 30px;
     height: 30px;
     border-radius: 50%; 
-    top: 10px;
-    right: 9px;
+    top: 8px;
+    right: 8px;
     cursor: pointer;
     fill: var(--header-color);
      background-color: var(--main-bg-color); 
@@ -850,7 +871,7 @@ address {
     border-color: var(--accent-color);
 }
 
-
+/* Форма модалки */
 
 .form-title {
     display: block;
@@ -994,61 +1015,37 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     overflow: hidden;
 } 
 
-
-
-.check-input:checked {
-    opacity: o;
-background: origin;
-background-image: url(../images/checked.svg);
-}
-
-.check-input:unchecked {
- opacity: 1;
-    border: 1px solid rgba(33, 33, 33, 1);
-}
-
-
-
 .icon {
-   display: inline-block;
-   
+    display: block;
     width: 16px;
     height: 15px;
-    border-radius: 2px;
-    border: 1px solid;
-     margin-left: 9px; 
-     margin-right: 8px;
-    margin-top: 29px;
-    
-
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    border: 1px solid color var(--header-color);
 }
 
- .icon:hover,
-.icon:focus {
-    border-color: var(--accent-color);
-} 
-
-.check-input:checked ~ .icon {
+.check-input:checked~.icon {
+    opacity: 0;
     border-color: var(--accent-color);
     background-color: var(--accent-color);
     background-image: url(../images/checked.svg);
     background-size: contain;
-    background-origin: border-box; 
+    background-origin: border-box;
     border: 1px solid rgba(33, 33, 33, 1);
 }
 
-.check-input:unchecked ~ .icon {
+.check-input:unchecked~.icon {
+    opacity: 1;
     border: 1px solid rgba(33, 33, 33, 1);
-    
+
 }
 
 
 
 .check-text {
+    margin-top: 20px;
+    margin-left: 50px;
     display: inline-flex;
+    user-select: none;
 }
-
 
 
 
