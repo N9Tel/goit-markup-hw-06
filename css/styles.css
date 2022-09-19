@@ -1002,31 +1002,35 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 /* Checkbox */
 
- .check-input {
+.check-input {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-} 
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
 
-.icon {
+.icon-check {
     display: block;
+    margin-top: 30px;
+   background-image: url(../images/unchecked.svg);
     width: 16px;
     height: 15px;
     border: 1px solid color var(--header-color);
+
+    
 }
 
 .check-input:checked~.icon {
-    opacity: 0;
+    opacity: 0; 
     border-color: var(--accent-color);
     background-color: var(--accent-color);
-    background-image: url(../images/checked.svg);
+    background-image: url(./images/checked.svg);
     background-size: contain;
     background-origin: border-box;
     border: 1px solid rgba(33, 33, 33, 1);
@@ -1034,16 +1038,18 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .check-input:unchecked~.icon {
     opacity: 1;
-    border: 1px solid rgba(33, 33, 33, 1);
+   background-image: url(./images/unchecked.svg);
 
 }
 
 
 
 .check-text {
-    margin-top: 20px;
-    margin-left: 50px;
-    display: inline-flex;
+    
+    margin: 0;
+    margin-top: -20px;
+    margin-left: 25px;
+    display: flex;
     user-select: none;
 }
 
