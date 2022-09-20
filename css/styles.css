@@ -722,7 +722,7 @@ address {
 .mailing {
  display: block;
     margin: 0;
-    
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
@@ -740,7 +740,7 @@ address {
     height: 50px;
     padding: 15px;
     padding-left: 16px;
-margin-top: 20px;
+
     font-weight: 400;
         font-size: 16px;
         line-height: calc(20/16);
@@ -774,12 +774,15 @@ margin-top: 20px;
     
    display: block;
     margin: 0;
-    margin-top: 20px;
+   
     margin-left: 12px; 
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
     cursor: pointer;
-    width: 200px;
-    height: 50px;
+    /* width: 200px;
+    height: 50px; */
     background-color: var(--accent-color);
     color: var(--txt-color);
     border: none;
@@ -795,6 +798,13 @@ justify-content: center;
     border-color: white;
 }
 
+.desc {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+
+}
 
 
 .icon-subscribe {
@@ -908,7 +918,7 @@ color: var(--header-color);
 
 .f-group {
     position: relative;
-    
+    margin-bottom: 12px;
    
 }
 
@@ -921,7 +931,7 @@ color: var(--header-color);
     
     padding-left: 42px;
     margin: 0; 
-    margin-bottom: 12px;    
+        
 
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -945,7 +955,7 @@ color: var(--header-color);
         height: 15px;
    top: 14px;
    left: 15px;
-   margin-right: 20px;
+   
    
 
 
@@ -1012,16 +1022,20 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
         white-space: nowrap;
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
-        overflow: hidden;
+        overflow: hidden; 
+}
+
+.check-label {
+    display: flex;
 }
 
 .icon-check {
     display: block;
-    margin-top: 30px;
+    margin-top: 25px;
    background-image: url(../images/unchecked.svg);
     width: 16px;
     height: 15px;
-    border: 1px solid color var(--header-color);
+    /* border: 1px solid ; */
 
     
 }
@@ -1047,7 +1061,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 .check-text {
     
     margin: 0;
-    margin-top: -20px;
+    margin-top: 20px;
     margin-left: 25px;
     display: flex;
     user-select: none;
@@ -1075,8 +1089,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .btn-form {
     display: block;
-    width: 200px;
-    height: 50px;
+    /* width: 200px;
+    height: 50px; */
+    padding-top: 10px;
+    padding-right: 52px; 
+    padding-bottom: 10px;
+    padding-left: 52px;
     margin-right: auto;
     margin-top: 22px;
     margin-left: auto;
@@ -1094,6 +1112,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);;
+}
+
+.btn-t {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
 }
 
 
