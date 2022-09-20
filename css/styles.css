@@ -890,6 +890,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 23.44px;
 letter-spacing: 0.03em;
+margin: 0;
 margin-bottom: 12px;
 
 color: var(--header-color);
@@ -1013,7 +1014,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 /* Checkbox */
 
 .check-input {
-    /* position: absolute;
+     position: absolute;
         width: 1px;
         height: 1px;
         margin: -1px;
@@ -1022,17 +1023,19 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
         white-space: nowrap;
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
-        overflow: hidden;  */
+        overflow: hidden;  
 }
 
-.check-input:checked  .icon-check:checked {
+.check-input:checked + .icon-check {
+    border-color: var(--accent-color);
     background-color: var(--accent-color);
-    background-image: url(./images/checked.svg);
+    background-image: url('../images/checked.svg');
 }
 
-.check-input:unchecked .icon-check:unchecked {
+.check-input:unchecked + .icon-check {
+    border-color: transparent;
     background-color: transparent;
-    background-image: url(../images/unchecked.svg);
+    background-image: url('../images/unchecked.svg');
 }
 
 .check-label {
@@ -1040,33 +1043,19 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 
-
 .icon-check {
-    display: block;
-    margin-top: 25px;
-   background-image: url(../images/unchecked.svg);
+     display: inline-block;
     width: 16px;
-    height: 15px;
+        height: 15px;
+    margin-top: 25px;
+   background-image: url('../images/unchecked.svg');
+    
     
 
     
 }
 
-.check-input:checked~.icon {
-    opacity: 0; 
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-    background-image: url(./images/checked.svg);
-    background-size: contain;
-    background-origin: border-box;
-    border: 1px solid rgba(33, 33, 33, 1);
-}
 
-.check-input:unchecked~.icon {
-    opacity: 1;
-   background-image: url(./images/unchecked.svg);
-
-}
 
 
 
@@ -1101,8 +1090,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 .btn-form {
     display: block;
-    /* width: 200px;
-    height: 50px; */
     padding-top: 10px;
     padding-right: 52px; 
     padding-bottom: 10px;
